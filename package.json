@@ -6,12 +6,12 @@
     "prebuild": "mkdir -p static",
     "build": "run-p build:*",
     "build:deps": "cp -a node_modules/fine-uploader/fine-uploader static/",
-    "build:html": "cp html/* static/",
-    "start": "fine-uploader-server -u . static"
+    "build:html": "cp html/* static/"
   },
   "dependencies": {
     "fine-uploader": "^5.11.8",
-    "fine-uploader-server": "^0.1.0"
+    "fine-uploader-server": "^0.1.0",
+    "st": "^1.2.0"
   },
   "devDependencies": {
     "npm-run-all": "^3.0.0"
