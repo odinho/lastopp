@@ -86,6 +86,6 @@
 var uploader = new qq.FineUploader({
     element: document.getElementById('uploader'),
     request: { endpoint: '/upload' },
-    chunking: { enabled: true },
+    chunking: { enabled: true, partSize: 20*1000*1000 },
 })
 </script>
